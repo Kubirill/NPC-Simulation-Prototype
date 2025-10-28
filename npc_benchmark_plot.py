@@ -36,14 +36,14 @@ def fit_and_plot(x_col, y_col, xlabel, ylabel, title, filename):
 # --- Графики ---
 fit_and_plot(
     "n_cities", "build_distance_matrix_ms",
-    "Количество городов", "Время build_distance_matrix, мс",
-    "build_distance_matrix vs число городов (аппроксимация до 2000)",
+    "Кол-во областей", "Время преобразования данных, мс",
+    "Время преобразования данных vs Кол-во областей (аппроксимация до 2000)",
     "plot_build_distance_matrix_grid_fit.png"
 )
 
 fit_and_plot(
     "n_npcs", "trio_per_step_ms",
-    "Количество NPC", "Время (select+update+shaker) на шаг, мс",
-    "(select+update+shaker) vs NPC (аппроксимация до 2000)",
+    "Кол-во NPC", "Время выполнения алоритма, мс",
+    "Время выполнения алоритма vs Кол-во NPC (аппроксимация до 2000)",
     "plot_trio_vs_npcs_grid_fit.png"
 )
